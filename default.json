@@ -22,7 +22,8 @@
         "matchPackagePatterns": [
           "*"
         ],
-        "semanticCommitType": "chore"
+        "semanticCommitType": "chore",
+        "automerge": true
       },
       {
         "matchDepTypes": [
@@ -66,6 +67,43 @@
           "engines"
         ],
         "enabled": false
+      }
+    ]
+  },
+  "docker": {
+    "versioning": "docker",
+    "semanticCommitScope": "docker",
+    "semanticCommitType": "ci",
+    "packageRules": [
+      {
+        "matchUpdateTypes": [
+          "minor",
+          "patch",
+          "pin"
+        ],
+        "automerge": true
+      }
+    ]
+  },
+  "cargo": {
+    "fileMatch": [
+      "(^|/)Cargo\\.toml$"
+    ],
+    "versioning": "cargo",
+    "rangeStrategy": "bump",
+    "packageRules": [
+      {
+        "matchDepTypes": [
+          "*"
+        ],
+        "semanticCommitType": "chore",
+        "automerge": true
+      },
+      {
+        "matchDepTypes": [
+          "dependencies"
+        ],
+        "semanticCommitType": "fix"
       }
     ]
   }
