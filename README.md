@@ -1,6 +1,6 @@
 # @re-taro/renovate-config
 
-[![npm version](https://badge.fury.io/js/%40re-taro%2Frenovate-config.svg)](https://badge.fury.io/js/%40re-taro%2Frenovate-config)
+[![npm version](https://badge.fury.io/js/@re-taro%2Frenovate-config.svg)](https://badge.fury.io/js/@re-taro%2Frenovate-config)
 
 My personal renovate config.
 
@@ -16,7 +16,7 @@ My personal renovate config.
 
 ## Settings
 
-See the settings in [renovate.json](https://github.com/re-taro/renovate-config/blob/main/renovate.json) and [Configuration Options](https://renovatebot.com/docs/configuration-options/) in Renovate Docs
+See the settings in [renovate.json](https://github.com/re-taro/renovate-config/blob/main/default.json) and [Configuration Options](https://renovatebot.com/docs/configuration-options/) in Renovate Docs
 
 ### GitHub Actions
 
