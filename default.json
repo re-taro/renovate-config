@@ -1,0 +1,110 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    ":ignoreModulesAndTests",
+    ":label(renovate)",
+    ":prConcurrentLimit10",
+    ":timezone(Asia/Tokyo)",
+    ":widenPeerDependencies",
+    ":prImmediately",
+    ":dependencyDashboard"
+  ],
+  "npm": {
+    "extends": [
+      ":automergePatch",
+      ":separatePatchReleases",
+      "npm:unpublishSafe",
+      "helpers:disableTypesNodeMajor"
+    ],
+    "rangeStrategy": "bump",
+    "packageRules": [
+      {
+        "matchPackagePatterns": [
+          "*"
+        ],
+        "semanticCommitType": "chore",
+        "automerge": true
+      },
+      {
+        "matchDepTypes": [
+          "dependencies",
+          "peerDependencies"
+        ],
+        "semanticCommitType": "fix"
+      },
+      {
+        "groupName": "ESLint and Prettier",
+        "matchPackageNames": [
+          "eslint",
+          "prettier"
+        ],
+        "matchPackagePatterns": [
+          "^eslint-config-",
+          "^eslint-plugin-"
+        ]
+      },
+      {
+        "description": "automerge minor updates of widely used libraries in devDeps",
+        "matchUpdateTypes": [
+          "minor"
+        ],
+        "matchDepTypes": [
+          "devDependencies"
+        ],
+        "automerge": true,
+        "matchPackageNames": [
+          "glob",
+          "mocha",
+          "npm-run-all",
+          "power-assert",
+          "rimraf",
+          "sinon"
+        ]
+      },
+      {
+        "description": "disable package.json > engines update",
+        "matchDepTypes": [
+          "engines"
+        ],
+        "enabled": false
+      }
+    ]
+  },
+  "docker": {
+    "versioning": "docker",
+    "semanticCommitScope": "docker",
+    "semanticCommitType": "ci",
+    "packageRules": [
+      {
+        "matchUpdateTypes": [
+          "minor",
+          "patch",
+          "pin"
+        ],
+        "automerge": true
+      }
+    ]
+  },
+  "cargo": {
+    "fileMatch": [
+      "(^|/)Cargo\\.toml$"
+    ],
+    "versioning": "cargo",
+    "rangeStrategy": "bump",
+    "packageRules": [
+      {
+        "matchDepTypes": [
+          "*"
+        ],
+        "semanticCommitType": "chore",
+        "automerge": true
+      },
+      {
+        "matchDepTypes": [
+          "dependencies"
+        ],
+        "semanticCommitType": "fix"
+      }
+    ]
+  }
+}
