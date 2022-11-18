@@ -1,0 +1,24 @@
+{
+  "name": "@re-taro/renovate-config",
+  "version": "1.0.0",
+  "description": "My personal renovate config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/re-taro/renovate-config"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Rintaro Itokawa",
+    "email": "me@re-taro.dev",
+    "url": "https://re-taro.dev"
+  },
+  "scripts": {
+    "test": "renovate-config-validator"
+  },
+  "homepage": "https://github.com/re-taro/renovate-config#README.md",
+  "bugs": "https://github.com/re-taro/renovate-config/issues",
+  "keywords": ["renovate"],
+  "devDependencies": {
+    "renovate": "34.27.3"
+  }
+}
