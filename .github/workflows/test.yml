@@ -1,0 +1,22 @@
+name: Test
+
+on:
+  pull_request:
+  
+jobs:
+  test:
+    name: Test Renovate config
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+        cache: npm
+    - name: npm ci, and npm test
+      run: |
+        npm ci
+        npm test
+      env:
+        CI: true
