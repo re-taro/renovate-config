@@ -1,8 +1,13 @@
 name: Release
 description: Release a new npm package
+inputs:
+  npm:
+    description: npm token
+    required: true
 runs:
   using: composite
   steps:
     - run : npm publish --access=public
-      env :
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      shell: bash
+      env:
+        NODE_AUTH_TOKEN: ${{ inputs.npm }}
