@@ -106,5 +106,58 @@
         "semanticCommitType": "fix"
       }
     ]
-  }
+  },
+  "git-submodules": {
+    "enabled": true,
+    "versioning": "git",
+    "fileMatch": [
+      "(^|/)\\.gitmodules$"
+    ],
+    "automerge": false
+  },
+  "github-actions": {
+    "fileMatch": [
+      "^(workflow-templates|\\.github/workflows)/[^/]+\\.ya?ml$",
+      "(^|/)action\\.ya?ml$"
+    ],
+    "semanticCommitType": "ci",
+    "packageRules": [{
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin"
+      ],
+      "automerge": true
+    }]
+  },
+  "regexManagers": [
+    {
+      "fileMatch": ["\\.tsx?$"],
+      "matchStrings": [
+        "(?:im|ex)port(?:.|\\s)+?from\\s*['\"](?<depName>https://deno.land/.+?)@v?(?<currentValue>\\d+?\\.\\d+?\\.\\d+?).*?['\"]"
+      ],
+      "datasourceTemplate": "deno"
+    },
+    {
+      "fileMatch": ["^import_map.json$"],
+      "matchStrings": [
+        "\".+?\"\\s*:\\s*\"(?<depName>https://deno.land/.+?)@v?(?<currentValue>\\d+?\\.\\d+?\\.\\d+?).*?\""
+      ],
+      "datasourceTemplate": "deno"
+    },
+    {
+      "fileMatch": ["\\.tsx?$"],
+      "matchStrings": [
+        "(?:im|ex)port(?:.|\\s)+?from\\s*['\"]npm:(?<depName>.+?)@(?<currentValue>\\d+?\\.\\d+?\\.\\d+?).*?['\"]"
+      ],
+      "datasourceTemplate": "npm"
+    },
+    {
+      "fileMatch": ["^import_map.json$"],
+      "matchStrings": [
+        "\".+?\"\\s*:\\s*\"npm:(?<depName>.+?)@(?<currentValue>\\d+?\\.\\d+?\\.\\d+?).*?\""
+      ],
+      "datasourceTemplate": "npm"
+    }
+  ]
 }
