@@ -130,6 +130,20 @@
       "automerge": true
     }]
   },
+  "asdf": {
+    "fileMatch": [
+      "(^|/)\\.tool-versions$"
+    ],
+    "semanticCommitType": "build",
+    "packageRules": [{
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin"
+      ],
+      "automerge": true
+    }]
+  },
   "regexManagers": [
     {
       "fileMatch": ["\\.tsx?$"],
