@@ -13,12 +13,13 @@
     "url": "https://re-taro.dev"
   },
   "scripts": {
-    "test": "renovate-config-validator"
+    "lint": "renovate-config-validator default.json"
   },
   "homepage": "https://github.com/re-taro/renovate-config#README.md",
   "bugs": "https://github.com/re-taro/renovate-config/issues",
   "keywords": ["renovate"],
   "devDependencies": {
     "renovate": "34.27.3"
-  }
+  },
+  "packageManager": "pnpm@8.3.1"
 }

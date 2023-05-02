@@ -7,7 +7,13 @@ inputs:
 runs:
   using: composite
   steps:
-    - run : npm publish --access=public
-      shell: bash
+    - name: Enable pnpm
+      run: corepack enable
+      shell: sh
+    - name: Publish to NPM
+      run: |
+        pnpm config set //registry.npmjs.org/:_authToken ${{ inputs.npm }}
+        pnpm publish --access public --no-git-checks
+      shell: sh
       env:
         NODE_AUTH_TOKEN: ${{ inputs.npm }}
