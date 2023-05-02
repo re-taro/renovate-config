@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/re-taro/renovate-config/compare/1.0.0...1.1.0) (2023-05-02)
+
+
+### Features
+
+* add some rules ([1f5f40f](https://github.com/re-taro/renovate-config/commit/1f5f40f923d27f7f4960bfc079e7da65e455bd21))
+* support asdf ([6bdaa70](https://github.com/re-taro/renovate-config/commit/6bdaa705490099c3c4abd254438913af57e9024c))
+
 ## 1.0.0 (2022-11-18)
 
 

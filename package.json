@@ -1,6 +1,6 @@
 {
   "name": "@re-taro/renovate-config",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "My personal renovate config",
   "repository": {
     "type": "git",
@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/re-taro/renovate-config#README.md",
   "bugs": "https://github.com/re-taro/renovate-config/issues",
-  "keywords": ["renovate"],
+  "keywords": [
+    "renovate"
+  ],
   "devDependencies": {
     "renovate": "35.67.1"
   },
