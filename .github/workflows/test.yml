@@ -9,17 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3.5.2
-      - name: Use Node.js
-        uses: actions/setup-node@v3.6.0
+      - name: Setup Node.js
+        uses: re-taro/actions/setup-node@v1.0.0
         with:
-          node-version: latest
-          cache: pnpm
-      - name: Enable pnpm
-        run: corepack enable
-        shell: sh
-      - name: Install dependencies
-        run: pnpm i --frozen-lockfile
-        shell: sh
+          node-version-file: .tool-versions
       - name: Test Renovate config
         run: |
           pnpm exec renovate \
