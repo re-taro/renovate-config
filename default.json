@@ -9,6 +9,7 @@
     ":prImmediately",
     ":dependencyDashboard"
   ],
+  "prHourlyLimit": 0,
   "npm": {
     "extends": [
       ":automergePatch",
@@ -19,38 +20,23 @@
     "rangeStrategy": "bump",
     "packageRules": [
       {
-        "matchPackagePatterns": [
-          "*"
-        ],
+        "matchPackagePatterns": ["*"],
         "semanticCommitType": "chore",
         "automerge": true
       },
       {
-        "matchDepTypes": [
-          "dependencies",
-          "peerDependencies"
-        ],
+        "matchDepTypes": ["dependencies", "peerDependencies"],
         "semanticCommitType": "fix"
       },
       {
         "groupName": "ESLint and Prettier",
-        "matchPackageNames": [
-          "eslint",
-          "prettier"
-        ],
-        "matchPackagePatterns": [
-          "^eslint-config-",
-          "^eslint-plugin-"
-        ]
+        "matchPackageNames": ["eslint", "prettier"],
+        "matchPackagePatterns": ["^eslint-config-", "^eslint-plugin-"]
       },
       {
         "description": "automerge minor updates of widely used libraries in devDeps",
-        "matchUpdateTypes": [
-          "minor"
-        ],
-        "matchDepTypes": [
-          "devDependencies"
-        ],
+        "matchUpdateTypes": ["minor"],
+        "matchDepTypes": ["devDependencies"],
         "automerge": true,
         "matchPackageNames": [
           "glob",
@@ -63,56 +49,39 @@
       },
       {
         "description": "disable package.json > engines update",
-        "matchDepTypes": [
-          "engines"
-        ],
+        "matchDepTypes": ["engines"],
         "enabled": false
       }
     ]
   },
   "docker": {
-    "versioning": "docker",
     "semanticCommitScope": "docker",
     "semanticCommitType": "ci",
     "packageRules": [
       {
-        "matchUpdateTypes": [
-          "minor",
-          "patch",
-          "pin"
-        ],
+        "matchUpdateTypes": ["minor", "patch", "pin"],
         "automerge": true
       }
     ]
   },
   "cargo": {
-    "fileMatch": [
-      "(^|/)Cargo\\.toml$"
-    ],
-    "versioning": "cargo",
+    "fileMatch": ["(^|/)Cargo\\.toml$"],
     "rangeStrategy": "bump",
     "packageRules": [
       {
-        "matchDepTypes": [
-          "*"
-        ],
+        "matchDepTypes": ["*"],
         "semanticCommitType": "chore",
         "automerge": true
       },
       {
-        "matchDepTypes": [
-          "dependencies"
-        ],
+        "matchDepTypes": ["dependencies"],
         "semanticCommitType": "fix"
       }
     ]
   },
   "git-submodules": {
     "enabled": true,
-    "versioning": "git",
-    "fileMatch": [
-      "(^|/)\\.gitmodules$"
-    ],
+    "fileMatch": ["(^|/)\\.gitmodules$"],
     "automerge": false
   },
   "github-actions": {
@@ -121,28 +90,22 @@
       "(^|/)action\\.ya?ml$"
     ],
     "semanticCommitType": "ci",
-    "packageRules": [{
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin"
-      ],
-      "automerge": true
-    }]
+    "packageRules": [
+      {
+        "matchUpdateTypes": ["minor", "patch", "pin"],
+        "automerge": true
+      }
+    ]
   },
   "asdf": {
-    "fileMatch": [
-      "(^|/)\\.tool-versions$"
-    ],
+    "fileMatch": ["(^|/)\\.tool-versions$"],
     "semanticCommitType": "build",
-    "packageRules": [{
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin"
-      ],
-      "automerge": true
-    }]
+    "packageRules": [
+      {
+        "matchUpdateTypes": ["minor", "patch", "pin"],
+        "automerge": true
+      }
+    ]
   },
   "regexManagers": [
     {
