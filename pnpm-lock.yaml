@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   renovate:
-    specifier: 36.57.10
-    version: 36.57.10(typanion@3.12.1)
+    specifier: 36.57.11
+    version: 36.57.11(typanion@3.12.1)
 
 packages:
 
@@ -3043,7 +3043,7 @@ packages:
       foreground-child: 3.1.1
       jackspeak: 2.2.0
       minimatch: 9.0.3
-      minipass: 5.0.0
+      minipass: 7.0.3
       path-scurry: 1.10.1
     dev: true
 
@@ -4308,7 +4308,7 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
       lru-cache: 9.1.1
-      minipass: 5.0.0
+      minipass: 7.0.3
     dev: true
 
   /path-type@4.0.0:
@@ -4527,8 +4527,8 @@ packages:
       - supports-color
     dev: true
 
-  /renovate@36.57.10(typanion@3.12.1):
-    resolution: {integrity: sha512-aIdeJoEEuw2gC2cSKULsVwmBpk2XnWvxyA96mxEuSF1WQH0mKI9YC3RSAI0S0s9aWbXanXzu2yPVu5gzaFFUCw==}
+  /renovate@36.57.11(typanion@3.12.1):
+    resolution: {integrity: sha512-8BILroM/f10QuDnVYBssUAYw0I14+jYNcjGH1BTic9wpQkYd92Vk8UFiFX0mK2GVcly8c9cHNsU3JtB9VZz+rw==}
     engines: {node: ^18.12.0 || >=20.0.0, pnpm: ^8.0.0}
     hasBin: true
     dependencies:
