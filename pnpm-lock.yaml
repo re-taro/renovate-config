@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   renovate:
-    specifier: 37.35.1
-    version: 37.35.1(typanion@3.12.1)
+    specifier: 37.35.2
+    version: 37.35.2(typanion@3.12.1)
 
 packages:
 
@@ -2829,7 +2829,7 @@ packages:
     engines: {node: '>=0.10'}
     requiresBuild: true
     dependencies:
-      nan: 2.17.0
+      nan: 2.18.0
     dev: true
     optional: true
 
@@ -4188,12 +4188,6 @@ packages:
     dev: true
     optional: true
 
-  /nan@2.17.0:
-    resolution: {integrity: sha512-2ZTgtl0nJsO0KQCjEpxcIr5D+Yv90plTitZt9JBfQvVJDS5seMl3FOvsh3+9CoYWXf/1l5OaZzzF6nDm4cagaQ==}
-    requiresBuild: true
-    dev: true
-    optional: true
-
   /nan@2.18.0:
     resolution: {integrity: sha512-W7tfG7vMOGtD30sHoZSSc/JVYiyDPEyQVso/Zz+/uQd0B0L46gtC+pHha5FFMRpil6fm/AoEcRWyOVi4+E/f8w==}
     requiresBuild: true
@@ -4736,8 +4730,8 @@ packages:
       - supports-color
     dev: true
 
-  /renovate@37.35.1(typanion@3.12.1):
-    resolution: {integrity: sha512-dP5fsTbp+AYIDC3wH7Fg4LS0zaFi/UwRd4g/cRgAEVn5Dqlo/iuYItdH2DA9JJ39lIMd6IJaP3Heu3Um/f8Ajg==}
+  /renovate@37.35.2(typanion@3.12.1):
+    resolution: {integrity: sha512-IFsfXf6+2zf3RQmcQi67mYr2/6sEYtf1eS+ItezgDVIthfevHEDYOtHhPZPUqlNXzT55c3U4DGQ5Sz4Cv/YaXA==}
     engines: {node: ^18.12.0 || >=20.0.0, pnpm: ^8.0.0}
     hasBin: true
     dependencies:
