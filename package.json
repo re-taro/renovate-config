@@ -21,7 +21,7 @@
     "renovate"
   ],
   "devDependencies": {
-    "renovate": "37.91.3"
+    "renovate": "37.91.4"
   },
   "packageManager": "pnpm@8.12.0"
 }
