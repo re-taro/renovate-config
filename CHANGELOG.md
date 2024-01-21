@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.0 (2024-01-21)
+
+
+### Bug Fixes
+
+* migrate to v36 config ([870adac](https://github.com/re-taro/renovate-config/commit/870adacbe4092c96736e4c6f1ffc08e8ba666e40))
+
 ## [1.1.1](https://github.com/re-taro/renovate-config/compare/1.1.0...1.1.1) (2023-07-08)
 
 
