@@ -16,6 +16,6 @@ jobs:
           release-type: node
           include-v-in-tag: false
       - if: ${{ steps.release.outputs.release_created }}
-        uses: re-taro/actions/npm-publish@v3.5.4
+        uses: re-taro/actions/npm-publish@v3.6.0
         with:
           npm-token: ${{ secrets.NPM_TOKEN }}
