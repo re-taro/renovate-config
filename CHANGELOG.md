@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.0](https://github.com/re-taro/renovate-config/compare/renovate-config-v1.1.1...renovate-config-1.2.0) (2024-10-06)
+
+
+### Features
+
+* update deno and mise config ([#1079](https://github.com/re-taro/renovate-config/issues/1079)) ([c748771](https://github.com/re-taro/renovate-config/commit/c7487712e4f08679013734b81661dbc405491488))
+
+
+### Bug Fixes
+
+* fix broken renovate config ([#1082](https://github.com/re-taro/renovate-config/issues/1082)) ([069b305](https://github.com/re-taro/renovate-config/commit/069b30571ef1951bbec0450ab463ebf6e07872b8))
+* fix nodejs to node ([#1083](https://github.com/re-taro/renovate-config/issues/1083)) ([841272a](https://github.com/re-taro/renovate-config/commit/841272a4436821d25a5638fdb8aba8974520c3b2))
+
 ## [1.1.1](https://github.com/re-taro/renovate-config/compare/1.1.0...1.1.1) (2023-07-08)
 
 
