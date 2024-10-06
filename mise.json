@@ -1,10 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>re-taro/renovate-config/mise/golang",
-    "github>re-taro/renovate-config/mise/nodejs",
-    "github>re-taro/renovate-config/mise/python",
-    "github>re-taro/renovate-config/mise/ruby",
-    "github>re-taro/renovate-config/mise/rust"
+    "github>re-taro/renovate-config//mise/golang",
+    "github>re-taro/renovate-config//mise/nodejs",
+    "github>re-taro/renovate-config//mise/python",
+    "github>re-taro/renovate-config//mise/ruby",
+    "github>re-taro/renovate-config//mise/rust"
   ]
 }
