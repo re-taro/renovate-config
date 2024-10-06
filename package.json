@@ -20,13 +20,19 @@
     "renovate"
   ],
   "scripts": {
-    "lint": "renovate-config-validator default.json",
-    "fmt": "eslint --fix ."
+    "fmt": "eslint --fix .",
+    "test": "pnpm run --parallel /^test:.*/",
+    "test:validate": "renovate-config-validator --strict default.json deno.json deno/*.json mise.json mise/*.json replacement.json replacement/*.json playwright.json",
+    "test:regex": "vitest run"
   },
   "devDependencies": {
     "@re-taro/eslint-config": "5.2.0",
+    "dedent": "1.5.3",
     "eslint": "9.12.0",
     "eslint-plugin-format": "0.1.2",
-    "renovate": "38.110.2"
+    "re2": "1.21.4",
+    "renovate": "38.110.2",
+    "typescript": "5.6.2",
+    "vitest": "2.1.2"
   }
 }

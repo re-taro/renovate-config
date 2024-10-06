@@ -1,140 +1,23 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    ":ignoreModulesAndTests",
-    ":label(renovate)",
-    ":prConcurrentLimit10",
+    "config:recommended",
     ":timezone(Asia/Tokyo)",
-    ":widenPeerDependencies",
-    ":prImmediately",
-    ":dependencyDashboard"
+    ":semanticCommits",
+    "github>re-taro/renovate-config/biomejs",
+    "github>re-taro/renovate-config/deno",
+    "github>re-taro/renovate-config/mise",
+    "github>re-taro/renovate-config/playwright",
+    "github>re-taro/renovate-config/replacement"
   ],
-  "prHourlyLimit": 0,
-  "npm": {
-    "extends": [
-      ":automergePatch",
-      ":separatePatchReleases",
-      "npm:unpublishSafe",
-      "helpers:disableTypesNodeMajor"
-    ],
-    "rangeStrategy": "bump",
-    "packageRules": [
-      {
-        "matchPackagePatterns": ["*"],
-        "semanticCommitType": "chore",
-        "automerge": true
-      },
-      {
-        "matchDepTypes": ["dependencies", "peerDependencies"],
-        "semanticCommitType": "fix"
-      },
-      {
-        "groupName": "ESLint and Prettier",
-        "matchPackageNames": ["eslint", "prettier"],
-        "matchPackagePatterns": ["^eslint-config-", "^eslint-plugin-"]
-      },
-      {
-        "description": "automerge minor updates of widely used libraries in devDeps",
-        "matchUpdateTypes": ["minor"],
-        "matchDepTypes": ["devDependencies"],
-        "automerge": true,
-        "matchPackageNames": [
-          "glob",
-          "mocha",
-          "npm-run-all",
-          "power-assert",
-          "rimraf",
-          "sinon"
-        ]
-      },
-      {
-        "description": "disable package.json > engines update",
-        "matchDepTypes": ["engines"],
-        "enabled": false
-      }
-    ]
-  },
-  "docker": {
-    "semanticCommitScope": "docker",
-    "semanticCommitType": "ci",
-    "packageRules": [
-      {
-        "matchUpdateTypes": ["minor", "patch", "pin"],
-        "automerge": true
-      }
-    ]
-  },
-  "cargo": {
-    "fileMatch": ["(^|/)Cargo\\.toml$"],
-    "rangeStrategy": "bump",
-    "packageRules": [
-      {
-        "matchDepTypes": ["*"],
-        "semanticCommitType": "chore",
-        "automerge": true
-      },
-      {
-        "matchDepTypes": ["dependencies"],
-        "semanticCommitType": "fix"
-      }
-    ]
-  },
-  "git-submodules": {
-    "enabled": true,
-    "fileMatch": ["(^|/)\\.gitmodules$"],
-    "automerge": false
-  },
-  "github-actions": {
-    "fileMatch": [
-      "^(workflow-templates|\\.github/workflows)/[^/]+\\.ya?ml$",
-      "(^|/)action\\.ya?ml$"
-    ],
-    "semanticCommitType": "ci",
-    "packageRules": [
-      {
-        "matchUpdateTypes": ["minor", "patch", "pin"],
-        "automerge": true
-      }
-    ]
-  },
-  "asdf": {
-    "fileMatch": ["(^|/)\\.tool-versions$"],
-    "semanticCommitType": "build",
-    "packageRules": [
-      {
-        "matchUpdateTypes": ["minor", "patch", "pin"],
-        "automerge": true
-      }
-    ]
-  },
-  "regexManagers": [
+  "packageRules": [
     {
-      "fileMatch": ["\\.tsx?$"],
-      "matchStrings": [
-        "(?:im|ex)port(?:.|\\s)+?from\\s*['\"](?<depName>https://deno.land/.+?)@v?(?<currentValue>\\d+?\\.\\d+?\\.\\d+?).*?['\"]"
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
       ],
-      "datasourceTemplate": "deno"
-    },
-    {
-      "fileMatch": ["^import_map.json$"],
-      "matchStrings": [
-        "\".+?\"\\s*:\\s*\"(?<depName>https://deno.land/.+?)@v?(?<currentValue>\\d+?\\.\\d+?\\.\\d+?).*?\""
-      ],
-      "datasourceTemplate": "deno"
-    },
-    {
-      "fileMatch": ["\\.tsx?$"],
-      "matchStrings": [
-        "(?:im|ex)port(?:.|\\s)+?from\\s*['\"]npm:(?<depName>.+?)@(?<currentValue>\\d+?\\.\\d+?\\.\\d+?).*?['\"]"
-      ],
-      "datasourceTemplate": "npm"
-    },
-    {
-      "fileMatch": ["^import_map.json$"],
-      "matchStrings": [
-        "\".+?\"\\s*:\\s*\"npm:(?<depName>.+?)@(?<currentValue>\\d+?\\.\\d+?\\.\\d+?).*?\""
-      ],
-      "datasourceTemplate": "npm"
+      "matchCurrentVersion": "!/^v?0/",
+      "automerge": true
     }
   ]
 }
