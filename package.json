@@ -20,6 +20,7 @@
     "renovate"
   ],
   "scripts": {
+    "lint": "eslint .",
     "fmt": "eslint --fix .",
     "test": "pnpm run --parallel /^test:.*/",
     "test:validate": "renovate-config-validator --strict default.json deno.json deno/*.json mise.json mise/*.json replacement.json replacement/*.json playwright.json",

@@ -2,9 +2,11 @@ name: Test
 
 on:
   pull_request:
+    branches:
+      - main
 
 jobs:
-  test:
+  execute:
     name: Test Renovate config
     runs-on: ubuntu-latest
     steps:
@@ -27,3 +29,14 @@ jobs:
           RENOVATE_BASE_BRANCHES: ${{ github.sha }}
           RENOVATE_CONFIG_FILE: ./renovate.json
           LOG_LEVEL: debug
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.0
+      - name: Setup Node.js
+        uses: re-taro/actions/setup-node@v3.6.0
+        with:
+          node-version-file: .tool-versions
+      - name: Test
+        run: pnpm test
