@@ -6,7 +6,7 @@ My personal renovate config.
 
 ## Usage
 
-* `renovate.json`
+- `renovate.json`
 
 ```json
 {
