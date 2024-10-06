@@ -4,11 +4,10 @@
     "config:recommended",
     ":timezone(Asia/Tokyo)",
     ":semanticCommits",
-    "github>re-taro/renovate-config/biomejs",
-    "github>re-taro/renovate-config/deno",
-    "github>re-taro/renovate-config/mise",
-    "github>re-taro/renovate-config/playwright",
-    "github>re-taro/renovate-config/replacement"
+    "github>re-taro/renovate-config//deno",
+    "github>re-taro/renovate-config//mise",
+    "github>re-taro/renovate-config//playwright",
+    "github>re-taro/renovate-config//replacement"
   ],
   "packageRules": [
     {
