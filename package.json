@@ -33,7 +33,7 @@
     "eslint-plugin-format": "0.1.2",
     "re2": "1.21.4",
     "renovate": "38.114.0",
-    "typescript": "5.6.2",
+    "typescript": "5.6.3",
     "vitest": "2.1.2"
   }
 }
