@@ -24,8 +24,8 @@ importers:
         specifier: 1.21.4
         version: 1.21.4
       renovate:
-        specifier: 38.128.5
-        version: 38.128.5(@aws-sdk/client-sso-oidc@3.658.1(@aws-sdk/client-sts@3.658.1))(encoding@0.1.13)(typanion@3.12.1)
+        specifier: 38.128.6
+        version: 38.128.6(@aws-sdk/client-sso-oidc@3.658.1(@aws-sdk/client-sts@3.658.1))(encoding@0.1.13)(typanion@3.12.1)
       typescript:
         specifier: 5.6.3
         version: 5.6.3
@@ -3492,8 +3492,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@38.128.5:
-    resolution: {integrity: sha512-kZm119d8ZRJDzbsTc77JKdOC3JbIbQsKZXZ84hXjOi20GEpSbEMAvwULWk+6bjh5HDfNwAyNtMKz2bVEc6/Rtg==}
+  renovate@38.128.6:
+    resolution: {integrity: sha512-pGhBE1YpSzoBO0gnn1eBSArafzdtvJB88njim7NuUNAey1wR91xczjw33OUmLxyWSaIqTPwMDrJnnbIKmrU6tA==}
     engines: {node: ^20.15.1, pnpm: ^9.0.0}
     hasBin: true
 
@@ -4152,11 +4152,6 @@ packages:
   yaml-eslint-parser@1.2.3:
     resolution: {integrity: sha512-4wZWvE398hCP7O8n3nXKu/vdq1HcH01ixYlCREaJL5NUMwQ0g3MaGFUBNSlmBtKmhbtVG/Cm6lyYmSVTEVil8A==}
     engines: {node: ^14.17.0 || >=16.0.0}
-
-  yaml@2.5.1:
-    resolution: {integrity: sha512-bLQOjaX/ADgQ20isPJRvF0iRUHIxVhYvr53Of7wGcWlO2jvtUlH5m87DsmulFVxRpNLOnI4tB6p/oh8D7kpn9Q==}
-    engines: {node: '>= 14'}
-    hasBin: true
 
   yaml@2.6.0:
     resolution: {integrity: sha512-a6ae//JvKDEra2kdi1qzCyrJW/WZCgFi8ydDV+eXExl95t+5R+ijnqHJbz9tmMh8FUjx3iv2fCQ4dclAQlO2UQ==}
@@ -8745,7 +8740,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@38.128.5(@aws-sdk/client-sso-oidc@3.658.1(@aws-sdk/client-sts@3.658.1))(encoding@0.1.13)(typanion@3.12.1):
+  renovate@38.128.6(@aws-sdk/client-sso-oidc@3.658.1(@aws-sdk/client-sts@3.658.1))(encoding@0.1.13)(typanion@3.12.1):
     dependencies:
       '@aws-sdk/client-codecommit': 3.658.1
       '@aws-sdk/client-ec2': 3.658.1
@@ -9548,9 +9543,7 @@ snapshots:
     dependencies:
       eslint-visitor-keys: 3.4.3
       lodash: 4.17.21
-      yaml: 2.5.1
-
-  yaml@2.5.1: {}
+      yaml: 2.6.0
 
   yaml@2.6.0: {}
 
