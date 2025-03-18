@@ -24,8 +24,8 @@ importers:
         specifier: 1.21.4
         version: 1.21.4
       renovate:
-        specifier: 39.207.2
-        version: 39.207.2(encoding@0.1.13)(typanion@3.12.1)
+        specifier: 39.207.3
+        version: 39.207.3(encoding@0.1.13)(typanion@3.12.1)
       typescript:
         specifier: 5.8.2
         version: 5.8.2
@@ -3050,11 +3050,6 @@ packages:
   nan@2.20.0:
     resolution: {integrity: sha512-bk3gXBZDGILuuo/6sKtr0DQmSThYHLtNCdSdXk9YkxD/jK6X2vmCyyXBBxyqZ4XcnzTyYEAThfX3DCEnLf6igw==}
 
-  nanoid@3.3.8:
-    resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-
   nanoid@3.3.9:
     resolution: {integrity: sha512-SppoicMGpZvbF1l3z4x7No3OlIjP7QJvC9XR7AhZr1kL133KHnKPztkKDc+Ir4aJ/1VhTySrtKhrsycmrMQfvg==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -3442,8 +3437,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@39.207.2:
-    resolution: {integrity: sha512-Woz7K5DDzJj8UK8UCKJB/RvvpsNLDN34HSzYvbjnm6xXKpV8bI5FfPrqtVdMIO3GkoRtOaMd3fiOfv+gppwTsw==}
+  renovate@39.207.3:
+    resolution: {integrity: sha512-IRG1O9+gKr61XB12m3dvuT0SOpHGG0aCvcLou1h/NqoU3zaNNpAZGwlYxG2UFbM7bJhe+C947mi8BG+YVJGo5w==}
     engines: {node: ^20.15.1 || ^22.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -8139,8 +8134,6 @@ snapshots:
 
   nan@2.20.0: {}
 
-  nanoid@3.3.8: {}
-
   nanoid@3.3.9: {}
 
   napi-build-utils@1.0.2:
@@ -8377,7 +8370,7 @@ snapshots:
 
   postcss@8.4.47:
     dependencies:
-      nanoid: 3.3.8
+      nanoid: 3.3.9
       picocolors: 1.1.0
       source-map-js: 1.2.1
 
@@ -8561,7 +8554,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@39.207.2(encoding@0.1.13)(typanion@3.12.1):
+  renovate@39.207.3(encoding@0.1.13)(typanion@3.12.1):
     dependencies:
       '@aws-sdk/client-codecommit': 3.738.0
       '@aws-sdk/client-ec2': 3.738.0
