@@ -24,8 +24,8 @@ importers:
         specifier: 1.21.4
         version: 1.21.4
       renovate:
-        specifier: 39.211.1
-        version: 39.211.1(encoding@0.1.13)(typanion@3.12.1)
+        specifier: 39.212.0
+        version: 39.212.0(encoding@0.1.13)(typanion@3.12.1)
       typescript:
         specifier: 5.8.2
         version: 5.8.2
@@ -3123,11 +3123,6 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  nanoid@3.3.9:
-    resolution: {integrity: sha512-SppoicMGpZvbF1l3z4x7No3OlIjP7QJvC9XR7AhZr1kL133KHnKPztkKDc+Ir4aJ/1VhTySrtKhrsycmrMQfvg==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-
   napi-build-utils@1.0.2:
     resolution: {integrity: sha512-ONmRUqK7zj7DWX0D9ADe03wbwOBZxNAfF20PlGfCWQcD3+/MakShIHrMqx9YwPTfxDdF1zLeL+RGZiR9kGMLdg==}
 
@@ -3510,8 +3505,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@39.211.1:
-    resolution: {integrity: sha512-QTgQQ7g+pS8xBoqrOLbvMf0EyDJj/8Czi8HSbFxJK1GSDrpxMI2niPNZvHbMShjSwoKzE4Vpe0CD8hzwZ2+4yw==}
+  renovate@39.212.0:
+    resolution: {integrity: sha512-K/Q9ncrFfGO8kQCMaJu6bgqoTzciQCVNahqHcNvwXFA3G21Uj9j2bkcb601ZXXkxIbBd3wRmrLzPX23On5g/dg==}
     engines: {node: ^20.15.1 || ^22.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -8483,8 +8478,6 @@ snapshots:
 
   nanoid@3.3.10: {}
 
-  nanoid@3.3.9: {}
-
   napi-build-utils@1.0.2:
     optional: true
 
@@ -8719,7 +8712,7 @@ snapshots:
 
   postcss@8.4.47:
     dependencies:
-      nanoid: 3.3.9
+      nanoid: 3.3.10
       picocolors: 1.1.0
       source-map-js: 1.2.1
 
@@ -8903,7 +8896,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@39.211.1(encoding@0.1.13)(typanion@3.12.1):
+  renovate@39.212.0(encoding@0.1.13)(typanion@3.12.1):
     dependencies:
       '@aws-sdk/client-codecommit': 3.738.0
       '@aws-sdk/client-ec2': 3.738.0
