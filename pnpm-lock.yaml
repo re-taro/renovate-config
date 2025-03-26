@@ -24,8 +24,8 @@ importers:
         specifier: 1.21.4
         version: 1.21.4
       renovate:
-        specifier: 39.216.1
-        version: 39.216.1(encoding@0.1.13)(typanion@3.12.1)
+        specifier: 39.218.1
+        version: 39.218.1(encoding@0.1.13)(typanion@3.12.1)
       typescript:
         specifier: 5.8.2
         version: 5.8.2
@@ -3117,11 +3117,6 @@ packages:
   nan@2.20.0:
     resolution: {integrity: sha512-bk3gXBZDGILuuo/6sKtr0DQmSThYHLtNCdSdXk9YkxD/jK6X2vmCyyXBBxyqZ4XcnzTyYEAThfX3DCEnLf6igw==}
 
-  nanoid@3.3.10:
-    resolution: {integrity: sha512-vSJJTG+t/dIKAUhUDw/dLdZ9s//5OxcHqLaDWWrW4Cdq7o6tdLIczUkMXt2MBNmk6sJRZBZRXVixs7URY1CmIg==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-
   nanoid@3.3.11:
     resolution: {integrity: sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -3512,8 +3507,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@39.216.1:
-    resolution: {integrity: sha512-2AdvkCXbXtWK4TH4sn66Bz3JKOHdxmUMQcx8bjFMhQx8OZPl0AV8fq54v0awwN7TkBJbMUJpdAGfrpjxW4btAg==}
+  renovate@39.218.1:
+    resolution: {integrity: sha512-cM9KO80u7h6ILNAjZQl2I/LyEPcgSQNlOrqI9e9j+jocAzV8Xmxku4I4Pdoo7/W6n69680ecW/ItaVqBM739tw==}
     engines: {node: ^20.15.1 || ^22.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -8480,8 +8475,6 @@ snapshots:
 
   nan@2.20.0: {}
 
-  nanoid@3.3.10: {}
-
   nanoid@3.3.11: {}
 
   napi-build-utils@1.0.2:
@@ -8720,7 +8713,7 @@ snapshots:
 
   postcss@8.4.47:
     dependencies:
-      nanoid: 3.3.10
+      nanoid: 3.3.11
       picocolors: 1.1.0
       source-map-js: 1.2.1
 
@@ -8904,7 +8897,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@39.216.1(encoding@0.1.13)(typanion@3.12.1):
+  renovate@39.218.1(encoding@0.1.13)(typanion@3.12.1):
     dependencies:
       '@aws-sdk/client-codecommit': 3.738.0
       '@aws-sdk/client-ec2': 3.738.0
