@@ -16,6 +16,6 @@ jobs:
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
       - if: ${{ steps.release.outputs.release_created }}
-        uses: re-taro/actions/npm-publish@v3.7.3
+        uses: re-taro/actions/npm-publish@v3.7.4
         with:
           npm-token: ${{ secrets.NPM_TOKEN }}
