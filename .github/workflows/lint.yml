@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4.2.2
       - name: Setup Node.js
-        uses: re-taro/actions/setup-node@v3.7.4
+        uses: re-taro/actions/setup-node@v3.7.5
         with:
           node-version-file: .tool-versions
       - name: lint
