@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4.3.0
       - id: release
-        uses: googleapis/release-please-action@v4.3.0
+        uses: googleapis/release-please-action@v4.4.0
         with:
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
