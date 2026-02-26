@@ -2,7 +2,7 @@
   "name": "@re-taro/renovate-config",
   "type": "module",
   "version": "1.2.0",
-  "packageManager": "pnpm@9.15.9",
+  "packageManager": "pnpm@10.30.3",
   "description": "My personal renovate config",
   "author": {
     "name": "Rintaro Itokawa",
